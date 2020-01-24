@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Paper Rock Scissors Game</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="paper-rock.css"/>
+</head>
+<body>
+    <div class="container">
+        <p>Paper - Rock - Scissors Game</p>
+        <button>Restart Game</button>
+        <div id="score" class="row">
+            <div class="col-6">Player: 0</div>
+            <div class="col-6">Computer: 0</div>
+        </div>
+        <div id="selection" class="row">
+            <div class="col">Make your selection</div>
+        </div>
+        <div id="choises" class="row">
+            <div class="col-4"><i id="paper-choise" class="fas fa-hand-paper choise"></i></div>
+            <div class="col-4"><i id="rock-choise" class="fas fa-hand-rock choise"></i></div>
+            <div class="col-4"><i id="scissors-choise" class="fas fa-hand-scissors choise"></i></div>
+                <div id="result" class="col-sm-4">
+                    <h3></h3>
+                    <i class=""></i>
+                    <p></p>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <script src="paper-rock.js"></script>
+    <!-- fontawesome icons-->
+    <script src="https://kit.fontawesome.com/a35f8701c8.js" crossorigin="anonymous"></script>
+</body>
+</html>

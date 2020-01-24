@@ -1,0 +1,113 @@
+   .container{
+    text-align: center;
+    font-size: 1.4em;
+    font-family: sans-serif;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+}
+
+i {
+    font-size: 13em;
+}
+
+button{
+    font-size: 0.7em;
+    margin-bottom: 10px;
+    background-color: #f2f3f5;
+    transition: all ease 0.35s;
+}
+
+button:focus{
+    outline: none;
+}
+
+#selection{
+    margin-bottom: 30px;
+    margin-top: 35px;
+}
+
+#score div:first-child{
+    background-color:#0a38ab;
+    color: white;
+}
+
+#score div:last-child{
+    background-color: black;
+    color: white;
+}
+
+
+/* hovers */
+button:hover{
+    color: white;
+    background-color: #0a38ab;
+}
+
+
+/* responsive */
+@media all and (max-width:990px){
+    i{
+        font-size: 10em;
+    } 
+}
+
+@media all and (max-width:770px){
+    i{
+        font-size: 6em;
+    } 
+}
+
+@media all and (max-width:420px){
+    .container{
+        font-size: 0.8em;
+    }
+    
+    button{
+        font-size: 0.7em;
+    }
+}
+
+@media all and (max-width:230px){
+    i{
+        font-size: 4em;
+    } 
+}
+
+
+/* style for result page */
+.result-page{
+    background-color: #a8aaad;
+    opacity: 1;
+}
+
+#result{
+    display: none;  
+    position: absolute;
+    left: 33%;
+    background-color: white;
+    padding: 20px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    box-shadow: 10px 15px 20px;
+}
+
+#result p{  
+    margin-top: 15px;
+    font-size: 0.8em;
+}
+
+#result h3{
+    color: #09ad35;
+}
+
+@media all and (max-width:574px){
+    #result{
+        display: none;  
+        position: absolute;
+        left:0;
+    } 
+}

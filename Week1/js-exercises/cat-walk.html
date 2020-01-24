@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Cat Walk</title>
+  </head>
+  <body>
+    <img style="position:absolute;" src="http://www.anniemation.com/clip_art/images/cat-walk.gif"/>
+
+    <script>
+        let img = document.querySelector("img");
+        let move = 0;
+        img.style.left = "0%";
+
+        //cat dance in the middle
+        function dance(){
+            clearInterval(catMoves);
+            setTimeout(theRest,5000);
+        }
+
+        //continue to walk after the dance
+        function theRest(){
+            img.src = "http://www.anniemation.com/clip_art/images/cat-walk.gif";
+            catMoves = setInterval(catWalk,50);
+        }
+
+        //basic move of cat
+        function catWalk(){
+            move += 0.5;
+            img.style.left = move + "%";
+            if (img.style.left == "40%"){
+                img.src = "https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif?itemid=10561424";
+                dance();
+            }
+            if (img.style.left == "100%"){
+                img.style.left = "0%";
+                move = 0;
+            }
+        }
+
+        let catMoves = setInterval(catWalk,50); 
+    </script> 
+
+</html>
