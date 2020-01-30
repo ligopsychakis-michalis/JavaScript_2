@@ -1,0 +1,92 @@
+body{
+    background-image: linear-gradient(to right, #3f1a13 , #6e1409);
+    font-family: serif;
+    font-size: 1.5em;
+    user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+.calculator{
+    margin: 10vh auto 0 auto;
+    width: fit-content;
+    padding: 0px 25px 25px 25px;
+    border: 1px solid black ;
+    border-radius: 25px;
+    background-color: white;
+}
+
+h2{
+    margin-top: 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 0 -25px;
+    border-radius: 23px 23px 0 0;
+    font-weight: 100;
+    font-size: 1em;
+    padding: 17px;
+} 
+
+input{
+    width: 60%;
+    font-size: 0.7em;
+    padding: 5px;
+    outline: none;
+}
+
+select{
+    width: 80%;
+    font-size: 1.2em;
+    text-align: center;
+    outline: none;
+}
+
+form:nth-of-type(2){
+    text-align: center;
+}
+
+form:nth-of-type(2) p{
+    text-align: left;
+}
+
+button{
+    background-color: #a75323;
+    color: white;
+    font-size: 1.3em;
+    text-align: center;
+    margin-top: 35px;
+    padding: 13px;
+    outline: none;
+}
+
+.btn{
+    text-align: center;
+}
+
+.tip-amount{
+    text-align: center;
+    line-height: 2.5px;
+}
+
+
+@media all and (max-width:439px){
+    body{
+        font-size: 1.2em;
+    }
+
+    form:nth-of-type(2){
+        text-align: left;
+    }  
+
+    select{
+        width: 100%;
+        font-size: 1em;
+    }
+
+    .calculator{
+        margin: 1vh auto 0 auto;
+    }
+}
