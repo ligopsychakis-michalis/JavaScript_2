@@ -20,6 +20,7 @@ const UI = {
     showTipAmount : function(result , people){
         document.getElementById("result").innerText = "$ " + result;
         document.querySelector(".tip-amount").style.display = "block";
+        document.getElementById("each").style.display = "block";
         //if there is only one person dissapear the word "each" from UI
         if  (people === "1"){
             document.getElementById("each").style.display = "none";
@@ -63,12 +64,11 @@ btn.addEventListener("click" , function(){
 })
 
 
-//Event: input to fields
+//Event: when input to fields then dissapear the result of tip-amount
     const calculator = document.querySelector(".calculator");
     calculator.addEventListener("click" , function(e){
         if(e.target.className === "input" && document.querySelector(".tip-amount").style.display === "block") {
             UI.dissapearTipAmount();
             UI.clearFields();
         }    
-    })
-    //dissapear the result of tip-amount 
+    }) 
