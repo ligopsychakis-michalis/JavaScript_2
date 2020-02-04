@@ -13,7 +13,8 @@ function assignmentCard(desc , sev , assign , num){
     addCard.id = "card" + num //change the id in order to every issue card has a different id
 
     //HTML code for every new issue card
-    addCard.innerHTML = "<p><span id = 'status' class = 'bg-info text-white p-1 rounded' style = 'font-size:0.85em;'>Open</span></p>" +
+    addCard.innerHTML = "<p>ID: " + (new Date()).getTime() + "</p>" +
+                        "<p><span id = 'status' class = 'bg-info text-white p-1 rounded' style = 'font-size:0.85em;'>Open</span></p>" +
                         "<h2>" + desc.value + "</h2>" +
                         "<p>" + "<span class = 'far fa-clock mr-2'> " + sev.value + "</span>" + 
                         "<span class = 'far fa-user'> " + assign.value + "</p>" +
