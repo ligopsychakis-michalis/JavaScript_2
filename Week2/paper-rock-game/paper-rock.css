@@ -64,10 +64,24 @@ button:hover{
 @media all and (max-width:420px){
     .container{
         font-size: 0.8em;
+        margin-top: 25px;
     }
     
+    .container p:first-child{
+        font-size: 1.7em;
+    }
+
+    #score{
+        font-size: 1.4em;
+        margin-top: 10px;
+    }
+
+    #selection{
+        font-size: 1.5em;
+    }
+
     button{
-        font-size: 0.7em;
+        font-size: 1.35em;
     }
 }
 
