@@ -9,7 +9,7 @@ body{
     width: 60%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10%;
+    margin-top: 22vh;
 }
 
 .block{
@@ -42,8 +42,8 @@ body{
 }
 
 .info-block i:nth-child(2){
-    flex: 1;
-    margin-left: 3px;
+    margin-right: auto;
+    margin-left: 5px;
 }
 
 #btn{
@@ -51,15 +51,17 @@ body{
     color: white;
     padding: 5px;
     font-size: 0.5em;
+    cursor: pointer;
 }
 
 .down-block{
     height: 20px;
     width: 20%;
+    min-width: 100px;
     margin-top: 4px;
 }
 
-@media all and (max-width:400px){
+@media all and (max-width:768px){
     .block p:first-child{
         font-size: 0.6em;
     }
