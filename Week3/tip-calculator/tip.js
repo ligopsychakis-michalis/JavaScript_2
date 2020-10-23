@@ -67,7 +67,7 @@ btn.addEventListener("click" , function(){
 //Event: when input to fields then dissapear the result of tip-amount
     const calculator = document.querySelector(".calculator");
     calculator.addEventListener("click" , function(e){
-        if(e.target.className === "input" && document.querySelector(".tip-amount").style.display === "block") {
+        if(e.target.classList.contains("input") && document.querySelector(".tip-amount").style.display === "block") {
             UI.dissapearTipAmount();
             UI.clearFields();
         }    
