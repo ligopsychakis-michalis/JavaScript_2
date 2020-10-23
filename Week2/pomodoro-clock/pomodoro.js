@@ -71,21 +71,25 @@ let timeOnSec = 0;
 let timerIsOn = false;  //use to know if timer counts cause if it's true I want to disable the arrows
 
 play.addEventListener("click",function(){
-    timerIsOn = true;
-    if((chooseTime + " : " + "00") == timer.innerText){   //I want to continue the reverse count if it's not finished yet
-        timeOnSec = chooseTime * 60;
-    }    
-    timer.innerText = Math.floor(timeOnSec / 60) + " : " + timeOnSec % 60;
-
-    reverseCount = setInterval(function(){
-        timeOnSec -= 1;
+    if (!timerIsOn) {
+        timerIsOn = true;
+        if((chooseTime + " : " + "00") == timer.innerText){   //I want to continue the reverse count if it's not finished yet
+            timeOnSec = chooseTime * 60;
+        }    
         timer.innerText = Math.floor(timeOnSec / 60) + " : " + timeOnSec % 60;
-        if (timeOnSec === -1){
-            timer.innerText = "Time's up!";
-            clearInterval(reverseCount);
-            timerIsOn = false;
-        }
-    },1000); 
+
+        reverseCount = setInterval(function(){
+            timeOnSec -= 1;
+            timer.innerText = Math.floor(timeOnSec / 60) + " : " + timeOnSec % 60;
+            if (timeOnSec <= 0){
+                timer.innerText = "Time's up!";
+                clearInterval(reverseCount);
+                timeOnSec = 0;
+                timerIsOn = false;
+            }
+        },1000); 
+    }
+    
 })
 
 
